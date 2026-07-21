@@ -8,3 +8,62 @@
     src: url('../fonts/Norsebold.otf') format('opentype');
 }
 
+body {
+    margin: 0px;
+    padding: 0px;
+
+}
+ 
+.main {
+    display: flex;
+    width: 100vw;
+    overflow: hidden;
+
+}
+
+.hero-banner {
+    height: 100vh;
+    flex: 1;
+    width: 100%;
+    background-image: url(../images/bg-photo.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.right {
+    flex: 2;
+}
+
+.hero-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    font: 6rem Norse-bold ;
+}
+
+.hero-top {
+    height: 225px;
+}
+
+.hero-footer {
+    display: flex;
+    color: lightgray;
+    justify-content: center;
+    align-items: end;
+    flex: 1;
+    margin-bottom: 8px;
+    font-size: 0.8rem;
+}
+
+a {
+    color: inherit;
+}
+
+.logo-icon {
+    height: 90%;
+}
