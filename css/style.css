@@ -79,7 +79,7 @@ a {
 
 .top-level-1 {
 
-    flex: 6;
+    flex: 5.4;
     padding: 100px 350px 0px 50px;
     line-height: 1.4;
 
@@ -87,12 +87,22 @@ a {
 
 .form-fields {
     background-color: rgb(255, 255,255);
-    flex: 5.4;
+    flex: 6.6;
     padding-left: 50px;
     padding-top: 20px;
+    padding-right: 500px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
     position: relative;
     z-index: 1;
+}
+
+.field-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-row {
+    margin-bottom: 20px;
 }
 
 .form-actions {
@@ -121,6 +131,7 @@ p {
 a#log-in {
     color: #596D48;
     font-weight: bold;
+    text-decoration: none;
 }
 
 button {
@@ -132,5 +143,27 @@ button {
     border: none;
     font-size: 1rem;
     font-weight: bold;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+}
+
+.form-row {
+    display: flex;
+    font-size: 0.5em;
+    justify-content: space-between;
+}
+
+input {
+    width: 250px;
+    height: 25px;
+    border: 1px solid #d1d5db;
+    border-radius: 5px;
+}
+
+input[type=password]:user-invalid {
+    border: 1px solid red;
+}
+
+input:focus {
+    outline: 2px solid blue;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
 }

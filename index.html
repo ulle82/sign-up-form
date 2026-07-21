@@ -25,16 +25,39 @@
                 <div class="form-fields">
                     <p>Let's do this!</p>
                     <div class="form-row">
-                        <div class="field-group"></div>
-                        <div class="field-group"></div>
+                        <div class="field-group">
+                            <label for="first_name">FIRST NAME</label>
+                            <input type="text" name="first_name" id="first_name" required>
+                        </div>
+                        <div class="field-group">
+                            <label for="last_name">LAST NAME</label>
+                            <input type="text" name="last_name" id="last_name" required>
+                        </div>
                     </div>
                     <div class="form-row">
-                        <div class="field-group"></div>
-                        <div class="field-group"></div>
+                        <div class="field-group">
+                            <label for="email">EMAIL</label>
+                            <input type="email" name="email" id="email" required>
+                        </div>
+                        <div class="field-group">
+                            <label for="phone_nbr">PHONE NUMBER</label>
+                            <input 
+                                type="tel" 
+                                name="phone_nbr" 
+                                id="phone_nbr" 
+                                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                                required>
+                        </div>
                     </div>
                     <div class="form-row">
-                        <div class="field-group"></div>
-                        <div class="field-group"></div>
+                        <div class="field-group">
+                            <label for="password">PASSWORD</label>
+                            <input type="password" name="password" id="password" required>
+                        </div>
+                        <div class="field-group">
+                            <label for="password_conf">CONFIRM PASSWORD</label>
+                            <input type="password" name="password_conf" id="password_conf" required>
+                        </div>
                     </div>
                 </div>
                 <div class="form-actions">
